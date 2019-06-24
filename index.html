@@ -101,10 +101,15 @@
 
              s+=" = "+tinhtoan();
              if(s.length<30) document.getElementById("nhap").innerText = s;
-             else document.getElementById("nhap").innerText = s.slice(s.length -30,s.length);}
-             s = s.slice(s.length+1,s);
+             else document.getElementById("nhap").innerText = s.slice(s.length -30,s.length);
+     }
+     
+     function tinhtoan() {
+         let s = document.getElementById("nhap").innerText;
+         let ketqua = eval(s);
+         return ketqua;
 
-
+     }
 
 </script>
 
