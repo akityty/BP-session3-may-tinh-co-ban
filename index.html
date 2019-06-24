@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính Bỏ Túi</title>
+    <style>
+        .button{
+            width: 60px;
+            height: 40px;
+        }
+        .input{
+            width: 226px;
+            height: 40px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <fieldset class="input"> <p class="input" id="nhap"> </p> </fieldset>
+<!--       <input id="nhap" value="" class="input"/>-->
+    </tr>
+    <tr>
+        <th><button type="button" class ="button"onclick="click1()">1</button></th>
+        <th><button type="button" class ="button"onclick="click2()">2</button></th>
+        <th><button type="button" class ="button"onclick="click3()">3</button></th>
+        <th><button type="button" class ="button"onclick="clickCong()">+</button></th>
+    </tr>
+    <tr>
+        <th><button type="button" class ="button"onclick="click4()">4</button></th>
+        <th><button type="button" class ="button"onclick="click5()">5</button></th>
+        <th><button type="button" class ="button"onclick="click6()">6</button></th>
+        <th><button type="button" class ="button"onclick="clickTru()">-</button></th>
+    </tr>
+    <tr>
+        <th><button type="button" class ="button"onclick="click7()">7</button></th>
+        <th><button type="button" class ="button"onclick="click8()">8</button></th>
+        <th><button type="button" class ="button"onclick="click9()">9</button></th>
+        <th><button type="button" class ="button"onclick="clickNhan()">*</button></th>
+    </tr>
+    <tr>
+        <th><button type="button" class ="button"onclick="clickReset()">C</button></th>
+        <th><button type="button" class ="button"onclick="click0()">0</button></th>
+        <th><button type="button" class ="button"onclick="clickBang()">=</button></th>
+        <th><button type="button" class ="button"onclick="clickChia()">/</button></th>
+    </tr>
+</table>
+<script>
+     let s = '';
+    function click1() { s +='1';
+        if(s.length<30)  document.getElementById("nhap").innerText = s;
+        else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click2() { s +='2';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click3() { s +='3';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click4() { s +='4';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click5() { s +='5';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click6() { s +='6';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click7() { s +='7';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click8() { s +='8';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click9() { s +='9';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function click0() { s +='0';
+         if(s.length<30)  document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function clickReset() {s="";
+             document.getElementById("nhap").innerText=s;}
+     function clickCong(){
+        s = s + "+";
+        if(s.length<30) document.getElementById("nhap").innerText = s;
+        else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function clickTru(){
+         s = s + "-";
+         if(s.length<30) document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function clickNhan(){
+         s = s + "*";
+         if(s.length<30) document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function clickChia(){
+         s = s + "/";
+         if(s.length<30) document.getElementById("nhap").innerText = s;
+         else document.getElementById("nhap").innerText = s.slice(s.length-30,s.length);}
+     function clickBang() {
+
+
+             s+=" = "+tinhtoan();
+             if(s.length<30) document.getElementById("nhap").innerText = s;
+             else document.getElementById("nhap").innerText = s.slice(s.length -30,s.length);}
+             s = s.slice(s.length+1,s);
+
+
+
+</script>
+
+
+</body>
+</html>
